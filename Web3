@@ -1,0 +1,44 @@
+pragma solidity ^0.8.0;
+
+contract MyContract {
+    uint256 public uintVariable;
+    bool public boolVariable;
+    address public addressVariable;
+    string public stringVariable;
+    
+    function setUintVariable(uint256 newValue) public {
+        uintVariable = newValue;
+        return uintVariable;
+    }
+    
+    function getUintVariable() public view returns (uint256) {
+        return uintVariable;
+    }
+    
+    function setBoolVariable(bool newValue) public {
+        boolVariable = newValue;
+        return boolVariable;
+    }
+    
+    function getBoolVariable() public view returns (bool) {
+        return boolVariable;
+    }
+    
+    function setAddressVariable(address newValue) public {
+        addressVariable = newValue;
+        return addressVariable;
+    }
+    
+    function getAddressVariable() public view returns (address) {
+        return addressVariable;
+    }
+    
+    function setStringVariable(string memory newValue) public {
+        stringVariable = newValue;
+        return stringVariable;
+    }
+    
+    function getStringVariable() public view returns (string memory) {
+        return stringVariable;
+    }
+}
